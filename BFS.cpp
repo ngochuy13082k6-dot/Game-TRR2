@@ -61,7 +61,6 @@ void BFS::draw(sf::RenderWindow& window, int tileSize) {
     waveRect.setSize(sf::Vector2f((float)(tileSize - 2), (float)(tileSize - 2)));
     pathRect.setSize(sf::Vector2f((float)(tileSize * 0.6f), (float)(tileSize * 0.6f)));
 
-    // Đã fix lỗi "signed/unsigned mismatch": Thêm (int) trước biến .size()
     for (int r = 0; r < (int)visited.size(); r++) {
         for (int c = 0; c < (int)visited[0].size(); c++) {
             if (visited[r][c]) {
