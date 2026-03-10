@@ -6,7 +6,6 @@
 using namespace std;
 using namespace sf;
 
-// Đã fix lỗi "uninitialized": Khởi tạo toàn bộ biến bằng 0 ngay từ đầu
 Game::Game() : currentState(MENU), fogEnabled(false), delayCounter(0),
 tileSize(0), windowWidth(0), windowHeight(0),
 startPos{ 0, 0 }, playerPos{ 0, 0 }, goalPos{ 0, 0 } {
